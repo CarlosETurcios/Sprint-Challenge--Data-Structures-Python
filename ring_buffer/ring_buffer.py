@@ -10,7 +10,7 @@ class RingBuffer:
             # Need to add Item
             self.buffer.append(item)
         else:
-            # replace first item and subtract
+            # replace first item
             self.buffer[self.index] = item
             if self.index == self.capacity - 1:
                 self.index = 0
